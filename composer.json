@@ -1,0 +1,30 @@
+{
+ "name" : "cbulock/home",
+ "description" : "Dashboard for Bulock House",
+ "homepage" : "https://github.com/cbulock/home",
+ "authors" : [
+  {
+   "name" : "Cameron Bulock",
+   "email" : "cameron@bulock.com",
+   "homepage" : "http://cameron.bulock.com",
+   "role" : "Developer"
+  }
+ ],
+ "support" : {
+  "issues" : "https://github.com/cbulock/home/issues",
+  "wiki" : "https://github.com/cbulock/home/wiki",
+  "source" : "https://github.com/cbulock/home"
+ },
+ "prefer-stable" :  true,
+ "require" : {
+  "php" : ">=5.4",
+  "cbulock/simple-router": "dev-master",
+  "twig/twig": "1.14.*",
+  "twig/extensions": "1.*"
+ },
+ "autoload" : {
+  "psr-4" : {
+    "cbulock\\home\\" : "src/"
+  }
+ }
+}

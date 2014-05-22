@@ -1,0 +1,7 @@
+vendor
+bower_components
+error_log
+vars.inc
+.project
+.idea
+*.DS_Store

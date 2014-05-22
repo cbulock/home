@@ -1,0 +1,5 @@
+<?php
+ define('NEST_USERNAME','');
+ define('NEST_PASSWORD','');
+ define('ZIP_CODE','48906');
+?>

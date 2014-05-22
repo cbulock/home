@@ -1,0 +1,20 @@
+{
+  "name": "Bulock Home Dashboard",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cbulock/home",
+  "authors": [
+    "Cameron Bulock <cameron@bulock.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.1.1"
+  }
+}
