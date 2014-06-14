@@ -1,5 +1,6 @@
 {
 	"map":	{
+		"enviro":	"Enviro"
 	},
 	"default":		"Main",
 	"not_found":	"NotFound"

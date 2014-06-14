@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bulock Home Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+		{% block stylesheets %}{% endblock %}
+		{% block meta_data %}{% endblock %}
+  </head>
+  <body>
+    <header>
+      <h1><a href='/'>Bulock Home Dashboard</a></h1>
+      <p id='inside_temp'><a href='enviro'>{{nestdata.temp.inside}}&deg;</a></p>
+      <!--<p id='outside_temp'>/ {{nestdata.temp.outside}}&deg;</p>-->
+    </header>
+    <div class='container-fluid'>
+    {% block content %}{% endblock %}
+    </div>
+    {% block javascript %}{% endblock %}
+  </body>
+</html>

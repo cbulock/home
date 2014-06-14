@@ -1,5 +1,54 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
 
 body {
-  font-family: 'Open Sans';
+  background-color: rgb(247, 247, 247);
+  font-family: 'PT Sans';
+  font-weight: 700;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  background: url(img/house.jpg) no-repeat center;
+  height: 200px;
+  background-size: 100%;
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+   1px 1px 0 #000;
+}
+
+header > h1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 105px 0 0;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 6px;
+}
+header a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: rgba(127, 127, 127, 0.75);
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#inside_temp {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 5em;
+  margin: 0;
+  height: 80px;
 }

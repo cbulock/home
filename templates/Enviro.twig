@@ -1,0 +1,17 @@
+{% extends "Base.twig" %}
+
+{% block content %}
+  <table class='table'>
+    <thead>
+      <tr><th>Inside</th><th></th><th>Outside</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class='{{nestdata.active_status}}'>{{nestdata.temp.inside}}&deg;F</td><td class='title'>Temp</td><td>{{nestdata.temp.outside}}&deg;F</td></tr>
+      <tr><td>{{nestdata.humidity.inside}}%</td><td class='title'>Humidity</td><td>{{nestdata.humidity.outside}}%</td></tr>
+    </tbody>
+  </table>
+{% endblock %}
+
+{% block stylesheets %}
+  <link href="css/enviro.css" rel="stylesheet" media="screen">
+{% endblock %}

@@ -1,0 +1,34 @@
+table {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+th, td {
+  text-align: center;
+}
+
+td {
+  border-radius: 10px;
+}
+
+thead > tr {
+  background-color: rgb(216, 232, 255);
+}
+
+tbody {
+  font-weight: 400;
+}
+
+td.title {
+  font-weight: 700;
+}
+
+.cool {
+  background-color: rgb(65, 156, 240);
+  color: white;
+}
+
+.heat {
+  background-color: rgb(255, 69, 69);
+  color: white;
+}

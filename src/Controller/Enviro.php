@@ -1,11 +1,11 @@
 <?php
 namespace cbulock\home\Controller;
 
-class Main extends Base {
+class Enviro extends Base {
  
  public function process() {
   
-  $this->setTemplate('Main');
+  $this->setTemplate('Enviro');
  
  }
  
