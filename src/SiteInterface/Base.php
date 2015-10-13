@@ -10,7 +10,7 @@ class Base {
  
  public function __construct() {
   
-  $loader = new \Twig_Loader_Filesystem('templates');
+  $loader = new \Twig_Loader_Filesystem(['templates', 'img/svg']);
   $this->twig = new \Twig_Environment($loader);
   $this->twig->addExtension(new \Twig_Extensions_Extension_I18n());
   

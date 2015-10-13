@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Mono);
+
+tbody tr {
+	cursor: pointer;
+}
+
+td.mac_address {
+	font-family: 'PT Mono', monospace;
+}
+
+td.user img {
+	margin-right: 3px;
+	border-radius: 15px;
+}
+
+td.device img, td.user img {
+	width: 30px;
+	height: 30px;
+}

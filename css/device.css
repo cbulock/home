@@ -1,0 +1,63 @@
+article {
+	margin: 1rem;
+	border: 6px solid #6BA6DA;
+	border-radius: 2rem;
+}
+
+article header {
+	background-color: #6BA6DA;
+	color: whitesmoke;
+}
+
+article header svg {
+	height: 80px;
+	width: 80px;
+	margin: 0 2rem;
+	fill: whitesmoke;
+}
+
+article h1 {
+	display: inline-block;
+	font-size: 6rem;
+	vertical-align: top;
+}
+
+article h3 {
+	display: inline-block;
+	margin: 0 10rem;
+	color: #D6D6D6;
+}
+
+article section {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+article section > div {
+	font-size: 2rem;
+	border: 2px solid #DADADA;
+	margin: 2rem;
+	border-radius: 1rem;
+}
+
+article section > div h5 {
+	padding: 1rem;
+	margin: 0;
+	background-color: #DADADA;
+	text-align: center;
+	color: #313131;
+	text-transform: uppercase;
+}
+
+article section > div p {
+	padding: 3rem;
+	line-height: 9rem
+}
+
+article img {
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	margin: 0 1rem;
+}

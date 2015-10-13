@@ -19,8 +19,9 @@
  "require" : {
   "php" : ">=5.4",
   "cbulock/simple-router": "dev-master",
-  "twig/twig": "1.14.*",
-  "twig/extensions": "1.*"
+  "twig/twig": "1.15.*",
+  "twig/extensions": "1.*",
+  "pigult/php-ipp": "dev-master"
  },
  "autoload" : {
   "psr-4" : {

@@ -1,0 +1,19 @@
+{% extends "Base.twig" %}
+
+{% block content %}
+<table id='deviceList' class='hover'></table>
+{% endblock %}
+
+{% block stylesheets %}
+	<link href="bower_components/DataTables/media/css/jquery.dataTables.css" rel="stylesheet" media="screen">
+	<link href="/css/devices.css" rel="stylesheet" media="screen">
+{% endblock %}
+
+{% block javascript %}
+	<script>
+		var devices = {{ devices | json_encode | raw }};
+	</script>
+
+	<script src='bower_components/DataTables/media/js/jquery.dataTables.min.js'></script>
+	<script src='/js/devices.js'></script>
+{% endblock %}

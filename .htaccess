@@ -11,4 +11,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . index.php
 
-php_flag display_errors off
+php_flag display_errors on

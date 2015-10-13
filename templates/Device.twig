@@ -1,0 +1,41 @@
+{% extends "Base.twig" %}
+
+{% block content %}
+	<article>
+		<header>
+			{{ source(device.type ~ '.svg') }}
+			<h1>{{ device.name }}</h1>
+			<h3>{{ device.hostname }}</h3>
+		</header>
+		<section>
+			<div>
+				<h5>Type</h5>
+				<p>{{ device.type }}</p>
+			</div>
+			<div>
+				<h5>MAC Address</h5>
+				<p>{{ device.mac_address }}</p>
+			</div>
+			<div>
+				<h5>IP Address</h5>
+				<p>{{ device.ip_address }}</p>
+			</div>
+			<div>
+				<h5>User</h5>
+				<p><img src='/img/users/{{ device.primary_user }}.jpg'>{{ device.primary_user }}</p>
+			</div>
+		</section>
+	</article>
+{% endblock %}
+
+{% block stylesheets %}
+	<link href="/css/device.css" rel="stylesheet" media="screen">
+{% endblock %}
+
+{% block javascript %}
+	<script>
+		var device = {{ device | json_encode | raw }};
+	</script>
+
+	<script src='/js/device.js'></script>
+{% endblock %}

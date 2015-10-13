@@ -5,3 +5,4 @@ vars.inc
 .project
 .idea
 *.DS_Store
+*.db
