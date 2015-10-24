@@ -16,6 +16,7 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "bootstrap": "~3.1.1",
-    "DataTables": "~1.10.9"
+    "DataTables": "~1.10.9",
+    "components-font-awesome": "~4.4.0"
   }
 }

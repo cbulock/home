@@ -20,16 +20,29 @@
 				<h5>IP Address</h5>
 				<p>{{ device.ip_address }}</p>
 			</div>
-			<div>
-				<h5>User</h5>
-				<p><img src='/img/users/{{ device.primary_user }}.jpg'>{{ device.primary_user }}</p>
-			</div>
+			{% if device.primary_user is not empty %}
+				<div>
+					<h5>User</h5>
+					<p><img src='/img/users/{{ device.primary_user }}.jpg' class='user'>{{ device.primary_user }}</p>
+				</div>
+			{% endif %}
+			{% if device.location_floor is not empty %}
+				<div class='location'>
+					<h5>Location</h5>
+					<p>
+						<img src='/img/floors/{{ device.location_floor }}.png'>
+						{#  x axis has 30px of margin, but has to be reduced 10px to center the span.  y axis has a 20px margin, minus 8 for centering #}
+						<span class="fa fa-map-marker fa-lg" style="top:{{ (device.location_y + 12) }}px;left:{{ (device.location_x + 20) }}px"></span>
+					</p>
+				</div>
+			{% endif %}
 		</section>
 	</article>
 {% endblock %}
 
 {% block stylesheets %}
 	<link href="/css/device.css" rel="stylesheet" media="screen">
+	<link href="/bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen">
 {% endblock %}
 
 {% block javascript %}

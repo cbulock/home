@@ -5,7 +5,10 @@ CREATE TABLE devices(
 	ip_address TEXT,
 	mac_address TEXT,
 	device_type INT,
-	primary_user INT
+	primary_user INT,
+	location_floor INT,
+	location_x INT,
+	location_y INT
 );
 
 CREATE TABLE device_types(

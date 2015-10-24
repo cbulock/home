@@ -55,9 +55,18 @@ article section > div p {
 	line-height: 9rem
 }
 
-article img {
+article img.user {
 	width: 80px;
 	height: 80px;
 	border-radius: 40px;
 	margin: 0 1rem;
+}
+
+.location p {
+	position: relative;
+}
+
+.location p span {
+	position: absolute;
+	color: red;
 }

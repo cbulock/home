@@ -11,7 +11,9 @@ class Devices extends Base {
 
 		$this->addData(
 			[
-				'devices' => $devices->all()
+				'devices' =>			$devices->all(),
+				'device_types' =>	$devices->gettypes(),
+				'users' =>				$devices->getusers()
 			]
 		);
 	}

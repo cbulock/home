@@ -1,9 +1,10 @@
 {
 	"map":	{
-		"enviro":	 "Enviro",
-		"printer": "Printer",
-		"device": "Device",
-		"devices": "Devices"
+		"enviro":		"Enviro",
+		"printer":	"Printer",
+		"device":		"Device",
+		"devices":	"Devices",
+		"api":			"PublicAPI"
 	},
 	"default":		"Main",
 	"not_found":	"NotFound"

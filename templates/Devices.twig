@@ -1,7 +1,13 @@
 {% extends "Base.twig" %}
 
 {% block content %}
-<table id='deviceList' class='hover'></table>
+	<table id='deviceList' class='hover'></table>
+
+	<template id='toolbarTemplate'>
+		<button class="btn btn-primary" data-toggle="modal" data-target="#deviceDialog">Add Device</button>
+	</template>
+
+	{% include 'dialogs/device.twig' %}
 {% endblock %}
 
 {% block stylesheets %}
@@ -14,6 +20,7 @@
 		var devices = {{ devices | json_encode | raw }};
 	</script>
 
+	<script src='bower_components/bootstrap/js/modal.js'></script>
 	<script src='bower_components/DataTables/media/js/jquery.dataTables.min.js'></script>
 	<script src='/js/devices.js'></script>
 {% endblock %}

@@ -11,7 +11,7 @@ class Devices {
 
 	public function all() {
 		$sql = "
-			SELECT d.id, d.name, d.hostname, d.ip_address, d.mac_address, u.name AS primary_user, t.type
+			SELECT d.id, d.name, d.hostname, d.ip_address, d.mac_address, d.location_floor, d.location_x, d.location_y, u.name AS primary_user, t.type
 			FROM devices as d
 			LEFT OUTER JOIN users AS u
 			ON d.primary_user = u.id
@@ -26,7 +26,7 @@ class Devices {
 		if ( !(is_int($id) || ctype_digit($id)) ) throw new \Exception('Not a valid device ID.');
 		
 		$sql = "
-			SELECT d.id, d.name, d.hostname, d.ip_address, d.mac_address, u.name AS primary_user, t.type
+			SELECT d.id, d.name, d.hostname, d.ip_address, d.mac_address, d.location_floor, d.location_x, d.location_y, u.name AS primary_user, t.type
 			FROM devices as d
 			LEFT OUTER JOIN users AS u
 			ON d.primary_user = u.id
@@ -36,6 +36,24 @@ class Devices {
 		";
 		$result = $this->db->query($sql);
 		return $this->db->fetchAll($result)[0];
+	}
+
+	public function gettypes() {
+		$sql = "
+			SELECT id, type
+			FROM device_types
+		";
+		$result = $this->db->query($sql);
+		return $this->db->fetchAll($result);
+	}
+
+	public function getusers() {
+		$sql = "
+			SELECT id, name
+			FROM users
+		";
+		$result = $this->db->query($sql);
+		return $this->db->fetchAll($result);
 	}
 
 }

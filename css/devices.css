@@ -1,7 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Mono);
 
+button.btn.btn-link {
+	color: black;
+	border-radius: 8px;
+}
+
+button.btn.btn-link:hover {
+	background-color: #ddd;
+}
+
 tbody tr {
-	cursor: pointer;
+	/* cursor: pointer; //hidding for now as row isn't clickable */
 }
 
 td.mac_address {
@@ -16,4 +25,14 @@ td.user img {
 td.device img, td.user img {
 	width: 30px;
 	height: 30px;
+}
+
+#toolbar {
+	float: left;
+}
+
+.dataTables_wrapper .dataTables_info {
+	clear: none;
+	padding-top: 0;
+	padding-left: 2rem;
 }
