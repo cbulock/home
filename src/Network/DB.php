@@ -1,20 +1,20 @@
 <?php
 namespace cbulock\home\Network;
 
-class DB extends \SQLite3 {
+class DB extends \PDO {
 
-	private $dbfile = "devicelist.db";
-
-	public function __construct($dbfile = NULL) {
-		if ($dbfile) $this->dbfile = $dbfile;
-		$this->open( $this->dbfile );
+	public function __construct($dsn = 'pgsql:dbname=devices') {
+		parent::__construct($dsn);
+		$this->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+		$this->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
 	}
 
-	public function fetchAll( $result ) {
-		$data = [];
-		while($row=$result->fetchArray(SQLITE3_ASSOC)){
-			$data[] = $row;
-		}
-		return $data;
+
+	public function fetch(\Peyote\Query $query) {
+		$q = $query->compile();
+		$s = $this->prepare($q);
+		$s->execute($query->getParams());
+		return $s->fetchAll();
 	}
+
 }

@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ff849ee4a2dbac8beaed92d9e9d7d42a",
+    "hash": "fbb0494ac178d82fb844b1f902e1af30",
+    "content-hash": "22417caae059c6ea682f5ba08a656593",
     "packages": [
         {
             "name": "cbulock/simple-router",
@@ -46,6 +47,50 @@
             "description": "Very basic router",
             "homepage": "http://github.com/cbulock/SimpleRouter/",
             "time": "2015-05-12 19:05:34"
+        },
+        {
+            "name": "davewid/peyote",
+            "version": "0.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/daveWid/Peyote.git",
+                "reference": "274ff5414b3745d33dedb3aec513cf318eacb0ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/daveWid/Peyote/zipball/274ff5414b3745d33dedb3aec513cf318eacb0ae",
+                "reference": "274ff5414b3745d33dedb3aec513cf318eacb0ae",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Peyote": "classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Widmer",
+                    "email": "dave@davewidmer.net",
+                    "homepage": "http://www.davewidmer.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A database query builder for PHP 5.3+",
+            "homepage": "https://github.com/daveWid/Peyote",
+            "keywords": [
+                "database",
+                "mysql",
+                "query builder"
+            ],
+            "time": "2013-08-16 18:05:39"
         },
         {
             "name": "pigult/php-ipp",

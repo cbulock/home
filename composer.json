@@ -21,7 +21,8 @@
   "cbulock/simple-router": "dev-master",
   "twig/twig": "1.15.*",
   "twig/extensions": "1.*",
-  "pigult/php-ipp": "dev-master"
+  "pigult/php-ipp": "dev-master",
+  "davewid/peyote": "0.6.*"
  },
  "autoload" : {
   "psr-4" : {

@@ -1,9 +1,11 @@
 var columns = [
 	{
 		data: 'type',
+		className: 'type',
 		orderable: false,
+		searchable: true,
 		render: function(data) {
-			return "<img src='img/svg/" + data + ".svg' title='" + data + "'>";
+			return "<img src='img/svg/" + data + ".svg' title='" + data + "'><span class='name'>" + data + "</span>";
 		}
 	},
 	{
@@ -24,9 +26,6 @@ var columns = [
 		title: 'MAC',
 		data: 'mac_address',
 		class: 'mac_address',
-		render: function(data) {
-			return data.toUpperCase();
-		}
 	},
 	{
 		title: 'User',
@@ -48,25 +47,39 @@ var columns = [
 ];
 
 var listeners = function() {
-	/* Not going to implement this yet, this enables clicking a row to view more data
+	//row click
 	var $rows = $('#deviceList tbody tr');
 	$rows.unbind();
 	$rows.click(function() {
 		var device_id = $(this).data('deviceId');
 		window.location.href = '/device/' + device_id;
-	});*/
+	});
+
+	//edit button
+	$('.edit-device').unbind();
+	$('.edit-device').click(function(e) {
+		e.stopPropagation();
+		edit_device_dialog($(this).data('deviceId'));
+	});
 };
 
 var edit_device_dialog = function(device_id) {
-	$.get('/api/network/devices/get/?id=' + device_id).done(function(data) {
+	home.get('network/devices/get/?id=' + device_id).done(function(data) {
+		$('#deviceDialog .modal-title').html('Edit Device');
+		$save_button = $('#deviceDialog .modal-footer .btn-primary');
+		$save_button.html('Update Device');
+		$save_button.data('method', 'update');
 		//populate data into dialog form
 		$('#deviceId').val(data.id);
 		$('#deviceEdit').val(data.name);
 		$('#hostnameEdit').val(data.hostname);
 		$('#ipEdit').val(data.ip_address);
 		$('#macEdit').val(data.mac_address);
-		$('#typeEdit').val(data.type);
-		$('#userEdit').val(data.primary_user);
+		$('#typeEdit').val(data.type_id);
+		$('#userEdit').val(data.primary_user_id);
+		$('#floorEdit').val(data.location_floor);
+		$('#locationXEdit').val(data.location_x);
+		$('#locationYEdit').val(data.location_y);
 
 		$('#deviceDialog').modal();
 	});
@@ -85,9 +98,6 @@ $(function () {
 			listeners();
 			//add custom toolbar content
 			$('#toolbar').append( $('#toolbarTemplate').html() );
-			$('.edit-device').click(function() {
-				edit_device_dialog($(this).data('deviceId'));
-			});
 		}
 	});
 

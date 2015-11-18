@@ -53,11 +53,25 @@
 							</select>
 						</div>
 					</div>
+					<div class="form-group">
+						<label for="floorEdit" class="col-sm-2 control-label">Location</label>
+						<div class="col-sm-10">
+							<select class="form-control" id='floorEdit'>
+								<option> </option>
+								<option value='0'>Basement</option>
+								<option value='1'>1st Floor</option>
+								<option value='2'>2nd Floor</option>
+							</select>
+						</div>
+					</div>
+					<div id='floorPosition'></div>
+					<input type='hidden' value='' id='locationXEdit'>
+					<input type='hidden' value='' id='locationYEdit'>
 				</form>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Save changes</button>
+				<button type="button" class="btn btn-primary" data-method='save'>Save Device</button>
 			</div>
 		</div>
 	</div>

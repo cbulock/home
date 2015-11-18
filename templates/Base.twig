@@ -11,13 +11,17 @@
 	<body>
 		<header>
 			<h1><a href='/'>Bulock Home Dashboard</a></h1>
-			<p id='inside_temp'><a href='/enviro'>{{nestdata.temp.inside}}&deg;</a></p>
-			<!--<p id='outside_temp'>/ {{nestdata.temp.outside}}&deg;</p>-->
 		</header>
 		<div class='container-fluid'>
 		{% block content %}{% endblock %}
 		</div>
 		<script src='/bower_components/jquery/dist/jquery.min.js'></script>
+		<script src='/bower_components/noty/js/noty/jquery.noty.js'></script>
+		<script src='/bower_components/noty/js/noty/layouts/topLeft.js'></script>
+		<script src='/bower_components/noty/js/noty/themes/relax.js'></script>
+		<script src='/js/api.js'></script>
+		<script src='/js/base_core.js'></script>
+		<script src='/js/base_ui.js'></script>
 		{% block javascript %}{% endblock %}
 	</body>
 </html>

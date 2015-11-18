@@ -51,7 +51,7 @@
 	INSERT INTO devices(
 		name, hostname, ip_address, mac_address, device_type, primary_user
 	) VALUES (
-		'XBox', 'xbox.hailey', '10.10.30.3', '', '6', '3'
+		'XBox', 'xbox.hailey', '10.10.30.3', NULL, '6', '3'
 	);
 	INSERT INTO devices(
 		name, hostname, ip_address, mac_address, device_type, primary_user
@@ -66,82 +66,82 @@
 	INSERT INTO devices(
 		name, hostname, ip_address, mac_address, device_type, primary_user
 	) VALUES (
-		'XBox', 'xbox.brett', '10.10.40.3', '', '6', '4'
+		'XBox', 'xbox.brett', '10.10.40.3', NULL, '6', '4'
 	);
 	INSERT INTO devices(
 		name, hostname, ip_address, mac_address, device_type, primary_user
 	) VALUES (
-		'Raspberry Pi', 'pi.brett', '10.10.40.4', '', '7', '4'
+		'Raspberry Pi', 'pi.brett', '10.10.40.4', NULL, '7', '4'
 	);
 	INSERT INTO devices(
 		name, hostname, ip_address, mac_address, device_type, primary_user
 	) VALUES (
-		'Laptop', 'laptop.brett', '10.10.40.5', '', '3', '4'
+		'Laptop', 'laptop.brett', '10.10.40.5', NULL, '3', '4'
 	);
 	INSERT INTO devices(
 		name, hostname, ip_address, mac_address, device_type, primary_user
 	) VALUES (
-		'PSVita', 'psvita.brett', '10.10.40.6', '', '8', '4'
+		'PSVita', 'psvita.brett', '10.10.40.6', NULL, '8', '4'
 	);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'Living Room', 'living.chromecast', '10.10.100.1', '', '9', ''
+		'Living Room', 'living.chromecast', '10.10.100.1', NULL, '9'
 	);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'Master Bedroom', 'master.chromecast', '10.10.100.2', '6C:AD:F8:95:CF:34', '9', ''
+		'Master Bedroom', 'master.chromecast', '10.10.100.2', '6C:AD:F8:95:CF:34', '9'
 	);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'Unused Chromecast', 'unused.chromecast', '10.10.100.3', '6C:AD:F8:35:EA:2B', '9', ''
+		'Unused Chromecast', 'unused.chromecast', '10.10.100.3', '6C:AD:F8:35:EA:2B', '9'
 	);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'Breakfast Bar', 'breakfast-bar.chromecast', '10.10.101.1', 'A4:77:33:F6:95:EC', '10', ''
+		'Breakfast Bar', 'breakfast-bar.chromecast', '10.10.101.1', 'A4:77:33:F6:95:EC', '10'
 	);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'Wii U', 'wiiu wiiu.bulock', '10.10.110.1', '', '6', ''
+		'Wii U', 'wiiu wiiu.bulock', '10.10.110.1', NULL, '6'
 	);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'Wii', 'wii wii.bulock', '10.10.110.2', '', '6', ''
+		'Wii', 'wii wii.bulock', '10.10.110.2', NULL, '6'
 	);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'PS3', 'ps3 ps3.bulock', '10.10.110.3', '', '6', ''
+		'PS3', 'ps3 ps3.bulock', '10.10.110.3', NULL, '6'
 	);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'RetroPie', 'retropie retropie.bulock', '10.10.110.4', '', '6', ''
+		'RetroPie', 'retropie retropie.bulock', '10.10.110.4', NULL, '6'
 	);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'Living Room TV', 'livingroom.tv', '10.10.120.1', '00:6B:9E:F6:56:5E', '11', ''
+		'Living Room TV', 'livingroom.tv', '10.10.120.1', '00:6B:9E:F6:56:5E', '11'	
+		);
+	INSERT INTO devices(
+		name, hostname, ip_address, mac_address, device_type
+	) VALUES (
+		'DirecTV Genie', 'genie.directv', '10.10.130.1', '08:EB:74:D6:5A:AE', '12'
 	);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'DirecTV Genie', 'genie.directv', '10.10.130.1', '08:EB:74:D6:5A:AE', '12', ''
-	);
+		'DirecTV Wireless Bridge', 'wireless.directv', '10.10.130.10', '60:02:B4:DF:4E:2A', '12'
+			);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'DirecTV Wireless Bridge', 'wireless.directv', '10.10.130.10', '60:02:B4:DF:4E:2A', '12', ''
-	);
-	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
-	) VALUES (
-		'DirecTV Master Bedroom', 'master.directv', '10.10.130.100', '88:F7:C7:10:24:50', '12', ''
+		'DirecTV Master Bedroom', 'master.directv', '10.10.130.100', '88:F7:C7:10:24:50', '12'
 	);
 	INSERT INTO devices(
 		name, hostname, ip_address, mac_address, device_type, primary_user
@@ -154,32 +154,32 @@
 		'DirecTV Brett', 'brett.directv', '10.10.130.102', '88:F7:C7:10:07:24', '12', '4'
 	);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'Roku 2', 'roku roku.bulock', '10.10.135.1', '', '13', ''
+		'Roku 2', 'roku roku.bulock', '10.10.135.1', NULL, '13'
 	);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'Nest Thermostat', 'kitchen.nest kitchen.nest.bulock', '10.10.200.1', '', '14', ''
+		'Nest Thermostat', 'kitchen.nest kitchen.nest.bulock', '10.10.200.1', NULL, '14'
 	);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'Router', 'router router.bulock', '10.0.0.1', '', '15', ''
+		'Router', 'router router.bulock', '10.0.0.1', NULL, '15'
 	);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'Network Controller', 'network network.bulock dhcp dhcp.bulock dns dns.bulock home home.bulock', '10.1.1.1', '17', '', ''
+		'Network Controller', 'network network.bulock dhcp dhcp.bulock dns dns.bulock home home.bulock', '10.1.1.1', NULL, '17'
 	);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'Office Printer', 'printer printer.bulock scanner scanner.bulock', '10.10.210.1', '', '16', ''
+		'Office Printer', 'printer printer.bulock scanner scanner.bulock', '10.10.210.1', NULL, '16'
 	);
 	INSERT INTO devices(
-		name, hostname, ip_address, mac_address, device_type, primary_user
+		name, hostname, ip_address, mac_address, device_type
 	) VALUES (
-		'Lenovo Laptop', 'laptop laptop.bulock', '10.10.250.1', '', '3', ''
+		'Lenovo Laptop', 'laptop laptop.bulock', '10.10.250.1', NULL, '3'
 	);

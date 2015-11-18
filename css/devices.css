@@ -10,11 +10,12 @@ button.btn.btn-link:hover {
 }
 
 tbody tr {
-	/* cursor: pointer; //hidding for now as row isn't clickable */
+	cursor: pointer;
 }
 
 td.mac_address {
 	font-family: 'PT Mono', monospace;
+	text-transform: uppercase;
 }
 
 td.user img {
@@ -25,6 +26,10 @@ td.user img {
 td.device img, td.user img {
 	width: 30px;
 	height: 30px;
+}
+
+td.type .name {
+	display: none;
 }
 
 #toolbar {

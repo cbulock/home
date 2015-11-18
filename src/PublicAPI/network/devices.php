@@ -17,6 +17,14 @@ class devices {
 		return $this->devices->get($id);
 	}
 
+	public function add($data) {
+		return $this->devices->add($data);
+	}
+
+	public function update($id, $data) {
+		return $this->devices->update($id, $data);
+	}
+
 	public function types() {
 		return $this->devices->gettypes();
 	}
