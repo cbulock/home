@@ -1,6 +1,7 @@
 var displayMap = function() {
 	var floor = $('#floorEdit').val();
-	$('#floorPosition').html('<img src="/img/floors/' + floor + '.png">');
+	var img = $('<img>').attr('src', '/img/floors/' + floor + '.png');
+	$('#floorPosition').empty().append(img);
 };
 
 $('#deviceDialog').on('shown.bs.modal', function () {
